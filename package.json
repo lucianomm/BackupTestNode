@@ -1,0 +1,28 @@
+{
+  "name": "backuptest",
+  "version": "1.0.0",
+  "description": "test for backup",
+  "main": "App.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucianomm/azureWebApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucianomm/azureWebApp/issues"
+  },
+  "homepage": "https://github.com/lucianomm/azureWebApp#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "knex": "^2.1.0",
+    "mysql": "^2.18.1",
+    "tedious": "^14.6.1"
+  }
+}
