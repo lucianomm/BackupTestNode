@@ -5,8 +5,8 @@ import {SecretClient} from '@azure/keyvault-secrets';
 // Replace value with your Key Vault name here
 const vaultName = "rmpgccoenp01euwrgluckv";
 const url = `https://${vaultName}.vault.azure.net/`;
-// const credential = new ManagedIdentityCredential();
-const credential = new DefaultAzureCredential()
+const credential = new ManagedIdentityCredential();
+// const credential = new DefaultAzureCredential()
   
 const client = new SecretClient(url, credential);
 

@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/90d1dae1-8ea0-4355-8d6f-0e20fc94a139/microsoft.web/sites/subscriptions/90d1dae1-8ea0-4355-8d6f-0e20fc94a139/resourceGroups/rm-pg-ccoe-np-01-euw-rg-luciano/providers/Microsoft.Web/sites/rm-pg-ccoe-np-01-euw-rg-luciano-webapp",
+    "appService.deploySubpath": "."
 }
