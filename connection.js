@@ -5,8 +5,12 @@ import {SecretClient} from '@azure/keyvault-secrets';
 // Replace value with your Key Vault name here
 const vaultName = "rmpgccoenp01euwrgluckv";
 const url = `https://${vaultName}.vault.azure.net/`;
+// const credential = new ManagedIdentityCredential();
+const credential = new DefaultAzureCredential()
   
-const client = new SecretClient(url, new ManagedIdentityCredential());
+const client = new SecretClient(url, credential);
+
+
 
 // Replace value with your secret name here
 const secretName = "DatabaseName";
@@ -21,7 +25,7 @@ export default knex({
         server : 'rm-pg-ccoe-np-01-euw-rg-luciano-test-server.database.windows.net',
         user : 'SuperAdmin',
         password : 'Testes1!',
-        database : secret,
+        database : secret.value,
         encrypt: true,
         options: {
             port: 1433
